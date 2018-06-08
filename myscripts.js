@@ -1,5 +1,4 @@
 
-
 window.ondragstart = function() { return false; } 
 var SeResult;
 var endoflist = false;
@@ -63,6 +62,7 @@ function SpeedProceed()
 		endoflist = false;
 	}
 }
+
 document.addEventListener('mousedown', mousedown);
 
 function mousedown(evt)
@@ -82,8 +82,7 @@ function mousemove(evt)
 	XFirstPoss=  evt.screenX;
 	
 }
-
-document.addEventListener('mouseup', mouseup, )
+document.addEventListener('mouseup', mouseup );
 function mouseup(evt)
 {
 	MouseDownNow = false;
