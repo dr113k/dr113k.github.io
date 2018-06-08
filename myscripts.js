@@ -1,7 +1,5 @@
 
-document.addEventListener('mousedown', mousedown, false);
-document.addEventListener('mouseup', mouseup, false);
-document.addEventListener('mousemove', mousemove, false);
+
 window.ondragstart = function() { return false; } 
 var SeResult;
 var endoflist = false;
@@ -65,11 +63,14 @@ function SpeedProceed()
 		endoflist = false;
 	}
 }
+document.addEventListener('mousedown', mousedown);
+
 function mousedown(evt)
 {
 	MouseDownNow = true;
 }
 
+document.addEventListener('mousemove', mousemove);
 function mousemove(evt)
 {
 	XSecPoss =  evt.screenX;
@@ -82,6 +83,7 @@ function mousemove(evt)
 	
 }
 
+document.addEventListener('mouseup', mouseup, )
 function mouseup(evt)
 {
 	MouseDownNow = false;
